@@ -1,7 +1,18 @@
 import React from 'react';
+import MainSection from './mainSection';
+import AboutSection from './aboutSection';
+import PlanSection from './planSection';
+import CardsSection from './cardsSection';
 
 const Home = () => {
-  return <>Home Page</>;
+  return (
+    <>
+      <MainSection />
+      <AboutSection />
+      <PlanSection />
+      <CardsSection />
+    </>
+  );
 };
 
 export default Home;
