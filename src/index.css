@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
 
-body,
-html {
+* {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -105,4 +104,31 @@ html {
 
 .register-section {
   padding-top: 25vh;
+}
+
+.cards-section {
+  margin-bottom: 10vh;
+}
+
+.footer {
+  background-image: url('https://w7.pngwing.com/pngs/691/438/png-transparent-desktop-blue-space-nebula-space-texture-blue-atmosphere.png');
+  background-size: cover;
+  background-color: #1d5674;
+  color: white;
+}
+
+.footer-heading {
+  font-weight: 600;
+  margin-bottom: 1vh;
+  /* text-align: center; */
+  /* font-size: ; */
+}
+
+.club-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.social-icons {
+  /* margin: auto; */
 }

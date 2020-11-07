@@ -10,7 +10,7 @@ const cardsSection = () => {
             <div className='section-heading mb-5'>Section Title</div>
 
             <div className='row'>
-              <div className='col-sm-4'>
+              <div className='col-4'>
                 <Card
                   cardImage='https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg'
                   cardTitle='Card Title1'
@@ -19,7 +19,7 @@ const cardsSection = () => {
                     longer.'
                 />
               </div>
-              <div className='col-sm-4'>
+              <div className='col-4'>
                 <Card
                   cardImage='https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg'
                   cardTitle='Card Title1'
@@ -28,7 +28,7 @@ const cardsSection = () => {
                     longer.'
                 />
               </div>
-              <div className='col-sm-4'>
+              <div className='col-4'>
                 <Card
                   cardImage='https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg'
                   cardTitle='Card Title1'

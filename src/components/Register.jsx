@@ -1,6 +1,8 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 const Register = () => {
+  console.log('Register');
   return (
     <>
       <section className='register-section'>
@@ -12,34 +14,34 @@ const Register = () => {
             <div className='col-8 mx-auto'>
               <div className='form-container'>
                 <form>
-                  <div class='form-group mb-4'>
-                    <label for='nameField'>Name</label>
+                  <div className='form-group mb-4'>
+                    <label>Name</label>
                     <input
                       type='text'
-                      class='form-control'
+                      className='form-control'
                       id='nameField'
                       placeholder='Chris Boyler'
                     />
                   </div>
-                  <div class='form-group mb-4'>
-                    <label for='emailField'>Email address</label>
+                  <div className='form-group mb-4'>
+                    <label>Email address</label>
                     <input
                       type='email'
-                      class='form-control'
+                      className='form-control'
                       id='emailField'
                       placeholder='name@example.com'
                     />
                   </div>
-                  <div class='form-group mb-5'>
-                    <label for='phoneField'>Phone No.</label>
+                  <div className='form-group mb-5'>
+                    <label>Phone No.</label>
                     <input
                       type='text'
-                      class='form-control'
+                      className='form-control'
                       id='phoneField'
                       placeholder='9567812345'
                     />
                   </div>
-                  <button type='submit' class='btn btn-primary'>
+                  <button type='submit' className='btn btn-primary'>
                     Register
                   </button>
                 </form>
@@ -52,4 +54,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default withRouter(Register);
