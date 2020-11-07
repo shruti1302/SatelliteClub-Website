@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
   }, []);
@@ -15,13 +15,20 @@ const Navbar = () => {
     else document.querySelector('.navbar-fixed-top').classList.remove('scroll');
   };
 
+  let bgColor = {
+    backgroundColor: '{props.color}',
+  };
+
   return (
     <>
-      <nav className='navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top'>
-        <Router>
-          <Link className='navbar-brand' to='/'>
+      <header>
+        <nav
+          className='navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top'
+          style={bgColor}
+        >
+          <NavLink className='navbar-brand' to='/'>
             Navbar
-          </Link>
+          </NavLink>
           <button
             className='navbar-toggler'
             type='button'
@@ -36,35 +43,47 @@ const Navbar = () => {
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav ml-auto'>
               <li className='nav-item active'>
-                <Link
+                <NavLink
                   to='/'
                   className='nav-link'
                   aria-current='page'
                   activeClassName='menu_active'
                 >
                   Home
-                </Link>
+                </NavLink>
+              </li>
+              <li className='nav-item'>
+                <NavLink
+                  to='/satellite'
+                  className='nav-link'
+                  activeClassName='menu_active'
+                >
+                  Satellite
+                </NavLink>
+              </li>
+              <li className='nav-item'>
+                <NavLink
+                  to='/subsystems'
+                  className='nav-link'
+                  activeClassName='menu_active'
+                >
+                  Subsystems
+                </NavLink>
               </li>
 
               <li className='nav-item'>
-                <Link
+                <NavLink
                   to='/register'
                   className='nav-link'
                   activeClassName='menu_active'
                 >
                   Register
-                </Link>
-              </li>
-
-              <li className='nav-item'>
-                <Link to='/' className='nav-link' activeClassName='menu_active'>
-                  Contact Us
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
-        </Router>
-      </nav>
+        </nav>
+      </header>
     </>
   );
 };

@@ -8,15 +8,16 @@ import {
 } from 'react-router-dom';
 
 import Home from './components/Home';
-import Navbar from './components/Navbar';
 import Register from './components/Register';
 import Footer from './components/Footer';
+import Satellite from './components/Satellite';
+import Subsystems from './components/Subsystem';
 
 const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
           {/* <Route exact path='/'>
             <Home />
@@ -26,6 +27,9 @@ const App = () => {
           </Route> */}
           <Route exact path='/' component={Home} />
           <Route exact path='/register' component={Register} />
+          <Route exact path='/satellite' component={Satellite} />
+          <Route exact path='/subsystems' component={Subsystems} />
+
           <Redirect to='/' />
         </Switch>
         <Footer />

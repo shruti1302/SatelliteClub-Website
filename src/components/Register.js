@@ -1,10 +1,12 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+import Navbar from './Navbar';
 
 const Register = () => {
   console.log('Register');
   return (
     <>
+      <Navbar />
       <section className='register-section'>
         <div className='container'>
           <div className='section-heading text-center mb-5'>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const planSection = (props) => {
+const contentSection = (props) => {
   return (
     <>
       <section className='plan-section content-section text-center'>
@@ -17,4 +17,4 @@ const planSection = (props) => {
   );
 };
 
-export default planSection;
+export default contentSection;

@@ -29,10 +29,16 @@ const Footer = () => {
                   <div className='footer-heading'> Social Media</div>
                   <div className='info social-icons pl-3'>
                     <span>
-                      <img src='https://img.icons8.com/material-outlined/40/ffffff/instagram-new.png' />
+                      <img
+                        src='https://img.icons8.com/material-outlined/40/ffffff/instagram-new.png'
+                        alt=''
+                      />
                     </span>
                     <span>
-                      <img src='https://img.icons8.com/material-outlined/40/ffffff/instagram-new.png' />
+                      <img
+                        src='https://img.icons8.com/material-outlined/40/ffffff/instagram-new.png'
+                        alt=''
+                      />
                     </span>
                   </div>
                 </div>

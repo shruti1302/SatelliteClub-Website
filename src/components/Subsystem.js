@@ -4,13 +4,13 @@ import Navbar from './Navbar';
 import ContentSection from './contentSection';
 import SatelliteTypeSection from './SatelliteTypeSection';
 
-const Satellite = () => {
+const Subsystems = () => {
   return (
     <>
       <Navbar color='#1d5674' />
       <CommonSection
-        title='SATELLITES'
-        imgsrc='https://i.pinimg.com/originals/56/d4/a5/56d4a5174adc7d8d30bda7d73b514d56.gif'
+        title='Subsystems'
+        imgsrc='https://i.pinimg.com/originals/57/36/f4/5736f49872c3f76864a1e4af9109acc9.gif'
       />
       <ContentSection
         title='Lrem Ipsum'
@@ -19,7 +19,7 @@ const Satellite = () => {
 '
       />
       <SatelliteTypeSection
-        title='Environmental Satellites'
+        title='Eget nunc'
         content='Nulla aliquet porttitor lacus luctus accumsan. Nibh ipsum
                     consequat nisl vel pretium lectus. Nec dui nunc mattis enim
                     ut tellus elementum sagittis vitae. Ullamcorper a lacus
@@ -32,7 +32,7 @@ const Satellite = () => {
                     volutpat. Tincidunt eget nullam non nisi est sit amet.'
       />
       <SatelliteTypeSection
-        title='Earth Observing Satellites'
+        title='Risus nullam'
         content='Nulla aliquet porttitor lacus luctus accumsan. Nibh ipsum
                     consequat nisl vel pretium lectus. Nec dui nunc mattis enim
                     ut tellus elementum sagittis vitae. Ullamcorper a lacus
@@ -45,7 +45,7 @@ const Satellite = () => {
                     volutpat. Tincidunt eget nullam non nisi est sit amet.'
       />
       <SatelliteTypeSection
-        title='Weather Satellites'
+        title='Morbi tempus '
         content='Nulla aliquet porttitor lacus luctus accumsan. Nibh ipsum
                     consequat nisl vel pretium lectus. Nec dui nunc mattis enim
                     ut tellus elementum sagittis vitae. Ullamcorper a lacus
@@ -58,7 +58,7 @@ const Satellite = () => {
                     volutpat. Tincidunt eget nullam non nisi est sit amet.'
       />
       <SatelliteTypeSection
-        title='Defence Satellites'
+        title='Nulla aliquet'
         content='Nulla aliquet porttitor lacus luctus accumsan. Nibh ipsum
                     consequat nisl vel pretium lectus. Nec dui nunc mattis enim
                     ut tellus elementum sagittis vitae. Ullamcorper a lacus
@@ -74,4 +74,4 @@ const Satellite = () => {
   );
 };
 
-export default Satellite;
+export default Subsystems;

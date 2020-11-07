@@ -8,9 +8,9 @@
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.01);
-  padding-left: 10vh !important;
-  padding-right: 10vh !important;
+  background-color: rgb(29, 84, 114);
+  padding-left: 10vw !important;
+  padding-right: 10vw !important;
   transition: 0.5s;
 }
 .navbar-brand {
@@ -129,6 +129,100 @@
   font-weight: 700;
 }
 
-.social-icons {
-  /* margin: auto; */
+/* ---------- Satellite Page ------------- */
+
+.satellite-section {
+  height: 80vh;
+  padding-top: 18vh;
+  /* margin-top: 200px; */
+}
+
+.satellite-heading {
+  margin-top: 12vh;
+  font-weight: 700;
+  font-size: 3rem;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 2px; */
+}
+
+.satellite-img {
+  width: 90%;
+}
+
+.brand-name {
+  color: #318aca;
+}
+
+.supporting-line {
+  font-size: 1.2rem;
+}
+
+.get-started-btn {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 4px solid #3498db;
+  text-decoration: none;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.get-started-btn:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.sub-heading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #3498db;
+}
+
+/* ---------------- */
+
+.scene {
+  perspective: 60px;
+}
+
+.box {
+  width: 60vw;
+  height: 30vh;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  /* background: red; */
+}
+
+.card__face--back {
+  /* background: blue; */
+}
+
+.box.is-flipped {
+  /* transform: rotateY(180deg); */
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.box-front-face {
+  background-color: red;
+}
+
+.box-back-face {
+  background-color: blue;
+  transform: rotateY(180deg);
 }

@@ -1,15 +1,17 @@
 import React from 'react';
 import MainSection from './mainSection';
 import AboutSection from './aboutSection';
-import PlanSection from './planSection';
+import ContentSection from './contentSection';
 import CardsSection from './cardsSection';
+import Navbar from './Navbar';
 
 const Home = () => {
   return (
     <>
+      <Navbar color='rbga(0,0,0,0.01)' />
       <MainSection />
       <AboutSection />
-      <PlanSection
+      <ContentSection
         title='Lorem Ipsum'
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
