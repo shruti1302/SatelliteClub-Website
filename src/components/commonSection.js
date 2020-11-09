@@ -6,9 +6,9 @@ const commonSection = (props) => {
       <section className='satellite-section'>
         <div className='container'>
           <div className='row'>
-            <div className='col-12 mx-auto'>
+            <div className='col-10 mx-auto'>
               <div className='row'>
-                <div className='col-5 pl-3'>
+                <div className='col-6 pl-3'>
                   <div className='satellite-heading'>
                     Know More About
                     <span className='brand-name satellite-heading'>
@@ -25,7 +25,7 @@ const commonSection = (props) => {
                     Dive Deep In!{' '}
                   </button>
                 </div>
-                <div className='col-7'>
+                <div className='col-6'>
                   <img src={props.imgsrc} alt='' className='satellite-img' />
                 </div>
               </div>

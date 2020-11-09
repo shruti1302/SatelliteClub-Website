@@ -2,30 +2,10 @@ import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = (props) => {
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  }, []);
-
-  const handleScroll = () => {
-    var top =
-      (document.documentElement && document.documentElement.scrollTop) ||
-      document.body.scrollTop;
-    if (top > 200)
-      document.querySelector('.navbar-fixed-top').classList.add('scroll');
-    else document.querySelector('.navbar-fixed-top').classList.remove('scroll');
-  };
-
-  let bgColor = {
-    backgroundColor: '{props.color}',
-  };
-
   return (
     <>
       <header>
-        <nav
-          className='navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top'
-          style={bgColor}
-        >
+        <nav className='navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top'>
           <NavLink className='navbar-brand' to='/'>
             Navbar
           </NavLink>
