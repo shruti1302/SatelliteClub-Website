@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from '../images/logo1.png';
 
 const Navbar = (props) => {
   return (
@@ -7,7 +8,8 @@ const Navbar = (props) => {
       <header>
         <nav className='navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top'>
           <NavLink className='navbar-brand' to='/'>
-            Navbar
+            {/* Navbar */}
+            <img src={Logo} alt='Club Logo' className='navbar-logo' />
           </NavLink>
           <button
             className='navbar-toggler'

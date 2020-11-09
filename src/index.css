@@ -25,12 +25,17 @@
   background-color: rgb(0, 0, 0, 0.01);
 }
 
-.navbar-brand {
+/* .navbar-brand {
   font-size: 1.9rem !important;
-}
+} */
 
 .nav-link {
   font-size: 1.3rem;
+}
+.navbar-logo {
+  margin-top: 5%;
+  width: 22vw;
+  /* width: px; */
 }
 
 .bg-opaque {
@@ -149,10 +154,19 @@
 }
 
 .footer {
-  background-image: url('https://w7.pngwing.com/pngs/691/438/png-transparent-desktop-blue-space-nebula-space-texture-blue-atmosphere.png');
+  /* background-image: url('https://w7.pngwing.com/pngs/691/438/png-transparent-desktop-blue-space-nebula-space-texture-blue-atmosphere.png'); */
   background-size: cover;
-  background-color: #1d5674;
+  /* background-color: #1d5674; */
   color: white;
+  background: #272626;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#000416),
+    to(#002f44)
+  );
+  background: linear-gradient(to bottom, #000416 0%, #002f44 100%);
 }
 
 .footer-heading {
@@ -160,6 +174,11 @@
   margin-bottom: 1vh;
   /* text-align: center; */
   /* font-size: ; */
+}
+
+.logo-footer {
+  margin: auto;
+  width: 100% !important;
 }
 
 .club-name {
