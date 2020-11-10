@@ -18,8 +18,7 @@ const mainSection = () => {
                 {/* <span className='muj'>Manipal University Jaipur</span> */}
               </div>
               <div className='tagline'>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                eiusmod!
+                ________MOTTO________
               </div>
             </div>
           </div>

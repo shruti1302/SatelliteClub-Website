@@ -17,8 +17,7 @@ const commonSection = (props) => {
                     </span>
                   </div>
                   <div className='supporting-line mt-3'>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed
-                    do!
+                    ________MOTTO________
                   </div>
                   <button type='button' className='get-started-btn mt-4'>
                     {' '}
