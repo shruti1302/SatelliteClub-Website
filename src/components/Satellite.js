@@ -34,9 +34,8 @@ const Satellite = () => {
         imgsrc='https://i.pinimg.com/originals/56/d4/a5/56d4a5174adc7d8d30bda7d73b514d56.gif'
       />
       <ContentSection
-        title='Lrem Ipsum'
-        content='Nulla aliquet porttitor lacus luctus accumsan. Nibh ipsum consequat nisl vel pretium lectus. Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Ullamcorper a lacus vestibulum sed arcu non odio. Eget nunc lobortis mattis aliquam faucibus. Risus nullam eget felis eget nunc lobortis mattis aliquam faucibus. Morbi tempus iaculis urna id. Leo a diam sollicitudin tempor id. Aliquam purus sit amet luctus. Auctor augue mauris augue neque gravida in fermentum et sollicitudin. Nulla facilisi morbi tempus iaculis urna id volutpat. Tincidunt eget nullam non nisi est sit amet.
-
+        title='Satellite'
+        content='A satellite is an object in space that orbits or circles around a bigger object. There are two kinds of satellites: natural (such as the moon orbiting the Earth) or artificial (such as the International Space Station orbiting the Earth). In the context of spaceflight, a satellite is an object that has been intentionally placed into orbit. These objects are called artificial satellites to distinguish them from natural satellites such as Earth\'s Moon. On 4 October 1957 the Soviet Union launched the world\'s first artificial satellite, Sputnik 1
 '
       />
 
