@@ -29,21 +29,12 @@ const Home = () => {
       <MainSection />
       <AboutSection />
       <ContentSection
-        title='Lorem Ipsum'
-        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Eu lobortis elementum nibh tellus molestie nunc non blandit
-                massa. Nullam non nisi est sit. 
-                Fames ac turpis egestas maecenas pharetra convallis posuere
-                morbi leo. Aenean euismod elementum nisi quis eleifend quam
-                adipiscing vitae proin. Velit euismod in pellentesque massa
-                placerat duis ultricies lacus sed. Excepteur sint occaecat
-                cupidatat non proident.'
+        title='Objectives'
+        content='1.Development of payloads that may comprise of detectors, electronics, and associated algorithms, which can be an experimental piggyback payload on the on-going (Small or operational) satellite projects of ISRO.
+                 2. Empowering the Satellite Team with the skills to develop the Satellite.
+                 3. Design, fabricate, test the satellite Bus & Payload, and deliver the integrated spacecraft for launch.
+                 4. Learn to use skills like project management, event planning and managing funds.
+                 5. Encourage research and development in miniaturized satellites, establishing a communication link between the satellite and ground station'
       />
 
       <CardsSection />
