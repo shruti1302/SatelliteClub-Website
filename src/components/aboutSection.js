@@ -9,21 +9,15 @@ const aboutSection = () => {
             <div className='col-10 content-container'>
               <div className='section-heading mb-5'>ABOUT THE CLUB</div>
               <div className='content'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Eu lobortis elementum nibh tellus molestie nunc non blandit
-                massa. Nullam non nisi est sit. <br />
+               The undergraduates are designing, manufacturing, and building a cube-shaped, miniaturized satellite, known
+as a CubeSat, to observe Earth from space. Vision of the club is to make Manipal University Jaipur Excel in
+Satellite and Space Technology. The mission is to develop and launch a Satellite for Manipal University
+Jaipur. Students part of Team get the opportunity to not just sharpen their skills in their respective subsystems.  <br />
                 <br />
-                Fames ac turpis egestas maecenas pharetra convallis posuere
-                morbi leo. Aenean euismod elementum nisi quis eleifend quam
-                adipiscing vitae proin. Velit euismod in pellentesque massa
-                placerat duis ultricies lacus sed. Excepteur sint occaecat
-                cupidatat non proident.
+               Working on a satellite project help club members to gain exceptional experience in field of space
+technology. Their work does not just end in the lab, but also incorporates attending international conferences,
+meet technical experts from world-renowned establishments like ISRO and NASA, and most importantly,
+making a difference in the aerospace industry.
               </div>
             </div>
           </div>
