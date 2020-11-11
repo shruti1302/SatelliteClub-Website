@@ -24,8 +24,9 @@ const Navbar = (props) => {
           </button>
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav ml-auto'>
-              <li className='nav-item active'>
+              <li className='nav-item'>
                 <NavLink
+                  exact
                   to='/'
                   className='nav-link mr-4'
                   aria-current='page'
@@ -36,6 +37,7 @@ const Navbar = (props) => {
               </li>
               <li className='nav-item'>
                 <NavLink
+                  exact
                   to='/satellite'
                   className='nav-link mr-4'
                   activeClassName='menu_active'
@@ -45,6 +47,7 @@ const Navbar = (props) => {
               </li>
               <li className='nav-item'>
                 <NavLink
+                  exact
                   to='/subsystems'
                   className='nav-link mr-4'
                   activeClassName='menu_active'
@@ -55,6 +58,7 @@ const Navbar = (props) => {
 
               <li className='nav-item'>
                 <NavLink
+                  exact
                   to='/register'
                   className='nav-link'
                   activeClassName='menu_active'

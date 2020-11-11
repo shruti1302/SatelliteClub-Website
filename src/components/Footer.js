@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/logo1.png';
+import Logo from '../images/transparentdefault.png';
 
 const Footer = () => {
   return (
@@ -86,7 +86,10 @@ const Footer = () => {
               <div className='info'>
                 <div className='info-label mb-2'>Address</div>
                 <div className='info-content'>
-                  <a href='https://goo.gl/maps/GopwtMj21wFJoy6B8'>
+                  <a
+                    href='https://goo.gl/maps/GopwtMj21wFJoy6B8'
+                    target='_blank'
+                  >
                     Manipal University, Jaipur <br />
                     Jaipur-Ajmer Express Highway, <br />
                     Dehmi Kalan, Near GVK Toll Plaza, <br />

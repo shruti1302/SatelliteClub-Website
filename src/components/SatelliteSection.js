@@ -1,5 +1,5 @@
 import React from 'react';
-import SatelliteVideo from '../images/Satellite Orbitting the Earth.mp4';
+import SatelliteVideo from '../images/SatelliteOrbiting.mp4';
 
 const SatelliteSection = () => {
   return (

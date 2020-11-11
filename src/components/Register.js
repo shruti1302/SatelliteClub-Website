@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { withRouter } from 'react-router';
 import Navbar from './Navbar';
 
 const Register = () => {
-  console.log('Register');
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    var top =
+      (document.documentElement && document.documentElement.scrollTop) ||
+      document.body.scrollTop;
+    let navbar = document.querySelector('.navbar-fixed-top');
+    if (top > 200) {
+      navbar.classList.add('bg-opaque');
+      navbar.classList.remove('bg-transparent');
+    } else {
+      navbar.classList.add('bg-opaque');
+      navbar.classList.remove('bg-transparent');
+    }
+  };
+  // console.log('Register');
   return (
     <>
       <Navbar />
