@@ -30,13 +30,13 @@ const Home = () => {
       <AboutSection />
       <ContentSection
         title='Objectives'
-        content='<ul>
+        content={[<ul>
                  <li>Development of payloads that may comprise of detectors, electronics, and associated algorithms, which can be an experimental piggyback payload on the on-going (Small or operational) satellite projects of ISRO.</li>
                  <li>Empowering the Satellite Team with the skills to develop the Satellite.</li>
                  <li>Design, fabricate, test the satellite Bus & Payload, and deliver the integrated spacecraft for launch.</li>
                  <li>Learn to use skills like project management, event planning and managing funds.</li>
                  <li>Encourage research and development in miniaturized satellites, establishing a communication link between the satellite and ground station</li>
-                 </ul>'
+                 </ul>]}
       />
 
       <CardsSection />
