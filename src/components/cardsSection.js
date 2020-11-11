@@ -31,7 +31,7 @@ satellite. Conducting training sessions for designing the 3D models of satellite
               <div className='col-4'>
                 <Card
                   cardImage='https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg'
-                  cardTitle='Student\'s Profile'
+                  cardTitle={["Student's Profile"]}
                   cardContent='Satellite team provides a unique, hands-on opportunity for students from a different semesters in the
 college to collaborate in a meaningful way for the purpose of advancing space technology. Most importantly,students will actually be launching technologically advanced satellites into space.
 This club will set a new bar for student-built technology by demonstrating an actual satellite built and
