@@ -27,7 +27,7 @@ const Navbar = (props) => {
               <li className='nav-item active'>
                 <NavLink
                   to='/'
-                  className='nav-link'
+                  className='nav-link mr-4'
                   aria-current='page'
                   activeClassName='menu_active'
                 >
@@ -37,7 +37,7 @@ const Navbar = (props) => {
               <li className='nav-item'>
                 <NavLink
                   to='/satellite'
-                  className='nav-link'
+                  className='nav-link mr-4'
                   activeClassName='menu_active'
                 >
                   Satellite
@@ -46,7 +46,7 @@ const Navbar = (props) => {
               <li className='nav-item'>
                 <NavLink
                   to='/subsystems'
-                  className='nav-link'
+                  className='nav-link mr-4'
                   activeClassName='menu_active'
                 >
                   Subsystems

@@ -39,33 +39,27 @@
 }
 
 .bg-opaque {
-  background-color: #2c5f77;
+  background-color: #0b173d;
   box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5);
 }
 
 .main-section {
-  /* background-image: url('./images/Main-section-img-2.jpg'); */
-  /* background-image: url('https://img.lovepik.com/photo/40008/1890.jpg_wh860.jpg'); */
   background-image: url('./images/casey-horner-RmoWqDCqN2E-unsplash.jpg');
-  /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
-  /* background-image: url('https://www.freepik.com/free-photo/vibrant-night-sky-with-stars-nebula-galaxy_10181202.htm#page=1&query=sky%20stars%20background&position=10'); */
-
   background-size: cover;
   background-repeat: no-repeat;
-  /* min-height: 100vh; */
   background-attachment: fixed;
-  /* padding-top: 20vh;
-  padding-bottom: 10vh; */
-  /* color: #fff; */
 }
 
 .layer {
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: rgb(11, 23, 61, 0.2);
   height: 100%;
   width: 100%;
   padding-top: 12%;
   padding-bottom: 7%;
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .hindi-heading {
@@ -74,13 +68,14 @@
   font-size: 7rem;
   letter-spacing: 1px;
   word-spacing: 15px;
+  color: #d1a239;
 }
 
 .main-heading {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 900;
-  letter-spacing: 6px;
-  word-spacing: 5px;
+  letter-spacing: 8px;
+  word-spacing: 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
@@ -121,15 +116,17 @@
   font-weight: 700;
   font-size: 2.5rem;
   text-transform: uppercase;
+  color: #d1a239;
 }
 
 .content {
   text-align: left;
 }
 
-.card {
+.main-card {
   transition: 0.5s;
   border-radius: 10px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card-img {
@@ -138,7 +135,7 @@
   border-top-right-radius: 10px !important;
 }
 
-.card:hover {
+.main-card:hover {
   transform: scale(1.06);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
@@ -181,40 +178,87 @@
   width: 100% !important;
 }
 
-.club-name {
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #9c9c9c;
+}
+
+.info-label {
+  font-weight: 600;
+}
+
+/* .club-name {
   font-size: 1.3rem;
   font-weight: 700;
-}
+} */
 
 /* ---------- Satellite Page ------------- */
 
-.satellite-section {
-  height: 80vh;
-  padding-top: 18vh;
-  /* margin-top: 200px; */
-}
-
 .satellite-heading {
-  margin-top: 12vh;
-  font-weight: 700;
-  font-size: 3rem;
-  /* text-transform: uppercase; */
-  /* letter-spacing: 2px; */
+  /* padding-top: 10vh; */
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
 }
 
-.satellite-img {
-  width: 90%;
+.get-to-know {
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  font-size: 3.5rem;
 }
 
-.brand-name {
-  color: #318aca;
+.satellite {
+  font-size: 7.5rem;
+}
+
+.satellite-section {
+  position: relative;
+  background-color: black;
+  min-height: 100vh;
+  /* height: 75vh; */
+  /* min-height: 25rem; */
+  /* width: 100%; */
+  overflow: hidden;
+}
+
+.satellite-section video {
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* min-width: 100%; */
+  /* min-height: 100%; */
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.satellite-section .container {
+  margin-top: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+.satellite-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.2;
+  z-index: 1;
 }
 
 .supporting-line {
   font-size: 1.2rem;
 }
 
-.get-started-btn {
+/* .get-started-btn {
   font-weight: 600;
   font-size: 17px;
   letter-spacing: 1px;
@@ -232,7 +276,7 @@
 .get-started-btn:hover {
   background-color: #3498db;
   color: white;
-}
+} */
 
 .sub-heading {
   font-weight: 700;
@@ -240,16 +284,14 @@
   color: #3498db;
 }
 
+.card {
+  border: 0px !important;
+}
+
 .type-card {
-  /* background-image: url('https://miro.medium.com/max/500/1*JjVVvCymLfqTXACE8dfRNw.jpeg'); */
-  /* background-color: #3498db; */
-  /* background-size: cover; */
-  /* height: v; */
-  width: 70%;
-  height: 300px;
+  height: 400px;
   color: white;
   margin-top: 1%;
-  margin-bottom: 5%;
 
   /* border-radius: 20px; */
 }
@@ -263,12 +305,12 @@
   transition: transform 1s;
   transform-style: preserve-3d;
   /* border: 1px solid black; */
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; /* padding: 4%; */
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) scale(1.05);
 }
 
 .flip-card-front,
@@ -278,7 +320,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .flip-card-front {
@@ -288,36 +330,56 @@
 
 /* Style the back side */
 .flip-card-back {
-  /* background-color: dodgerblue; */
-  /* color: white; */
   transform: rotateY(180deg);
-  /* background-color: #a3b4c0; */
-  /* color: black; */
-  padding: 4%;
-  background: #272626;
+  color: black;
+  padding: 7%;
+  background: #d8d6d6;
   background: -webkit-gradient(
     linear,
     left top,
     right bottom,
-    from(#000000),
-    to(#363535)
+    from(#d1d1d1),
+    to(#f0e9e9)
   );
-  background: linear-gradient(to bottom right, #222121 0%, #666565 100%);
+  background: linear-gradient(to bottom right, #d1d1d1 0%, #f0e9e9 100%);
+  border: 2px solid black;
 }
 
 .layer-card {
   width: 100%;
   height: 100%;
   padding: 4%;
-  /* background-color: black; */
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
 }
 
-.flip-card h1 {
-  margin-top: 10%;
+.type-card-title {
+  margin-top: 30%;
   font-weight: 700;
   letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+/* -------- Subsystem Page ---------------- */
+
+.subsystem-section {
+  background-image: url('./images/satellite.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+
+.subsystems-heading {
+  padding-top: 35vh;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.subsystems {
+  font-size: 7rem;
+  letter-spacing: 5px;
 }
 
 /* ---------- */
@@ -875,31 +937,66 @@
     1284px 979px #fff, 1682px 1844px #fff, 115px 1173px #fff, 1070px 157px #fff;
 }
 
-/* #title {
-  position: absolute;
+/* #title { */
+/* position: absolute;
   top: 50%;
   left: 0;
-  right: 0;
-  color: #fff;
-  text-align: center;
-  font-family: 'lato', sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-#title span {
+  right: 0; */
+/* color: #fff; */
+/* text-align: center; */
+/* font-family: 'lato', sans-serif; */
+/* font-weight: 300; */
+/* font-size: 50px; */
+/* letter-spacing: 10px; */
+/* margin-top: -60px; */
+/* padding-left: 10px; */
+/* } */
+/* #title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-} */
+}
+*/
 
 @keyframes animStar {
   from {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-2000px);
+    transform: translateY(-100vh);
   }
+}
+
+/* ------------- */
+
+.blog-card {
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  margin-top: 2%;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translate(0, -15px) scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  /* border-bottom-right-radius: 10px; */
+
+  /* height: 100%; */
+}
+
+.blog-content-container {
+  padding: 4%;
+  padding-left: 5%;
 }

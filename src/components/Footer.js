@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
       </div> */}
-      <section id='footer' className='footer shadow-top py-5'>
+      <section id='footer' className='footer shadow-top py-5 mt-5'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-3 col-sm-12 col-xs-12'>
@@ -86,10 +86,12 @@ const Footer = () => {
               <div className='info'>
                 <div className='info-label mb-2'>Address</div>
                 <div className='info-content'>
-                  Manipal University, Jaipur <br />
-                  Jaipur-Ajmer Express Highway, <br />
-                  Dehmi Kalan, Near GVK Toll Plaza, <br />
-                  Jaipur, Rajasthan 303007
+                  <a href='https://goo.gl/maps/GopwtMj21wFJoy6B8'>
+                    Manipal University, Jaipur <br />
+                    Jaipur-Ajmer Express Highway, <br />
+                    Dehmi Kalan, Near GVK Toll Plaza, <br />
+                    Jaipur, Rajasthan 303007
+                  </a>
                 </div>
               </div>
             </div>
