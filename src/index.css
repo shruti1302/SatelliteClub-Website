@@ -102,7 +102,8 @@ body {
 
 .main-section {
   /* background-image: url('./images/casey-horner-RmoWqDCqN2E-unsplash.jpg'); */
-  background-image: url('./images/10857.jpg');
+  /* background-image: url('./images/10857.jpg'); */
+  background-image: url('./images/10857-compressed.jpg');
   /* background-image: url('./images/starry-night.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;

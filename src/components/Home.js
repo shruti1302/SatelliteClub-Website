@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import MainSection from './mainSection';
 import AboutSection from './aboutSection';
-import CardsSection from './cardsSection';
+import CardsSection from './CardsSection';
 import Navbar from './Navbar';
 import ObjectiveSection from './ObjectiveSection';
 import ContactSection from './Contact';
