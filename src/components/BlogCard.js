@@ -3,14 +3,14 @@ import React from 'react';
 const BlogCard = (props) => {
   return (
     <>
-      <div class='blog-card mx-auto mb-5 container'>
-        <div class='row'>
-          <div class='col-lg-8 col-xs-12 col-sm-12 col-md-12 blog-content-container'>
-            <div class='blog-title'>{props.title}</div>
+      <div className='blog-card mx-auto mb-5 container'>
+        <div className='row'>
+          <div className='col-lg-8 col-xs-12 col-sm-12 col-md-12 blog-content-container order-xs-2 order-md-1'>
+            <div className='blog-title'>{props.title}</div>
 
-            <div class='blog-content'>{props.content}</div>
+            <div className='blog-content'>{props.content}</div>
           </div>
-          <div class='col-lg-4 col-xs-12 col-sm-12 col-md-12 '>
+          <div className='col-lg-4 col-xs-12 col-sm-12 col-md-12 blog-img-container order-xs-1 order-md-2'>
             <img src={props.imgsrc} alt='' />
           </div>
         </div>

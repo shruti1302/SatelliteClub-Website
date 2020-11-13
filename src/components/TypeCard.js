@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const TypeCard = (props) => {
   return (
     <>
-      <div className='card type-card flip-card mx-auto mr-3'>
+      <div className={`card type-card flip-card mx-auto mr-3 `}>
         <div className='flip-card-inner'>
           <div
             className='flip-card-front'
@@ -16,7 +16,7 @@ const TypeCard = (props) => {
               <div className='type-card-title'>{props.title}</div>
             </div>
           </div>
-          <div class='flip-card-back'>
+          <div className='flip-card-back'>
             <div className='type-card-content'> {props.content}</div>
           </div>
         </div>

@@ -26,22 +26,22 @@ const Satellite = () => {
       navbar.classList.remove('bg-opaque');
       navbar.classList.add('bg-transparent');
     }
+    // let satelliteHeading = document.querySelector('.satellite');
+    // let whatisHeading = document.querySelector('.get-to-know');
+
+    // if (top > 100) {
+    //   whatisHeading.style.fontSize = '2rem';
+    //   document.querySelector('.satellite').style.fontSize = '5rem';
+    // } else {
+    //   whatisHeading.style.fontSize = '3.5rem';
+
+    //   document.querySelector('.satellite').style.fontSize = '7.5rem';
+    // }
   };
 
   return (
     <>
       <Navbar />
-
-      {/* <CommonSection
-        title='SATELLITES'
-        imgsrc='https://i.pinimg.com/originals/56/d4/a5/56d4a5174adc7d8d30bda7d73b514d56.gif'
-      /> */}
-
-      {/* <section className='satellite-section'>
-        <div className='container-fluid'>
-
-        </div>
-      </section> */}
 
       <SatelliteSection />
 

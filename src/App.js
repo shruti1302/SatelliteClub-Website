@@ -12,6 +12,7 @@ import Register from './components/Register';
 import Footer from './components/Footer';
 import Satellite from './components/Satellite';
 import Subsystems from './components/Subsystem';
+import Team from './components/Team';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route exact path='/register' component={Register} />
           <Route exact path='/satellite' component={Satellite} />
           <Route exact path='/subsystems' component={Subsystems} />
+          <Route exact path='/team' component={Team} />
 
           <Redirect to='/' />
         </Switch>

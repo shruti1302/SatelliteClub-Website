@@ -4,15 +4,19 @@ import Navbar from './Navbar';
 
 const Register = () => {
   useEffect(() => {
+    let navbar = document.querySelector('.navbar-fixed-top');
+    navbar.classList.remove('bg-transparent');
+    navbar.classList.add('bg-opaque');
     window.addEventListener('scroll', handleScroll);
   }, []);
 
   const handleScroll = () => {
+    //
     var top =
       (document.documentElement && document.documentElement.scrollTop) ||
       document.body.scrollTop;
     let navbar = document.querySelector('.navbar-fixed-top');
-    if (top > 200) {
+    if (top > 2) {
       navbar.classList.add('bg-opaque');
       navbar.classList.remove('bg-transparent');
     } else {
@@ -26,8 +30,12 @@ const Register = () => {
       <Navbar />
       <section className='register-section'>
         <div className='container'>
-          <div className='section-heading text-center mb-5'>
+          <div className='section-heading text-center mb-3'>
             BECOME A MEMBER
+          </div>
+          <div className='tagline text-center mt-1 mb-5'>
+            Join Anant Drishti to contribute your infinitesimal bit to the
+            seamless sky!
           </div>
           <div className='row'>
             <div className='col-8 mx-auto'>
@@ -51,16 +59,52 @@ const Register = () => {
                       placeholder='name@example.com'
                     />
                   </div>
-                  <div className='form-group mb-5'>
-                    <label>Phone No.</label>
+                  <div className='form-group mb-4'>
+                    <label>Mobile No.</label>
                     <input
                       type='text'
                       className='form-control'
-                      id='phoneField'
+                      id='mobileField'
                       placeholder='9567812345'
                     />
                   </div>
-                  <button type='submit' className='btn btn-primary'>
+                  <div className='row'>
+                    <div className='col-5'>
+                      <div className='form-group mb-5'>
+                        <label>Course</label>
+                        <input
+                          type='text'
+                          className='form-control'
+                          id='courseField'
+                          placeholder='B.Tech.'
+                        />
+                      </div>
+                    </div>
+                    <div className='col-4'>
+                      <div className='form-group mb-5'>
+                        <label>Branch</label>
+                        <input
+                          type='text'
+                          className='form-control'
+                          id='branchField'
+                          placeholder='Mechanical'
+                        />
+                      </div>
+                    </div>
+                    <div className='col-3'>
+                      <div className='form-group mb-5'>
+                        <label>Year</label>
+                        <input
+                          type='text'
+                          className='form-control'
+                          id='yearField'
+                          placeholder='1st'
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type='submit' className='submit-btn'>
                     Register
                   </button>
                 </form>

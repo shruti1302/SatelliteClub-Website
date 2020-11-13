@@ -6,7 +6,7 @@ const Navbar = (props) => {
   return (
     <>
       <header>
-        <nav className='navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top'>
+        <nav className='navbar navbar-expand-lg fixed-top navbar-fixed-top'>
           <NavLink className='navbar-brand' to='/'>
             {/* Navbar */}
             <img src={Logo} alt='Club Logo' className='navbar-logo' />
@@ -28,7 +28,7 @@ const Navbar = (props) => {
                 <NavLink
                   exact
                   to='/'
-                  className='nav-link mr-4'
+                  className='nav-link mr-1'
                   aria-current='page'
                   activeClassName='menu_active'
                 >
@@ -39,7 +39,7 @@ const Navbar = (props) => {
                 <NavLink
                   exact
                   to='/satellite'
-                  className='nav-link mr-4'
+                  className='nav-link mr-1'
                   activeClassName='menu_active'
                 >
                   Satellite
@@ -49,14 +49,36 @@ const Navbar = (props) => {
                 <NavLink
                   exact
                   to='/subsystems'
-                  className='nav-link mr-4'
+                  className='nav-link mr-1'
                   activeClassName='menu_active'
                 >
                   Subsystems
                 </NavLink>
               </li>
-
               <li className='nav-item'>
+                <NavLink
+                  exact
+                  to='/team'
+                  className='nav-link mr-4'
+                  activeClassName='menu_active'
+                >
+                  Team
+                </NavLink>
+              </li>
+
+              <button className='register-button slide-btn '>
+                <NavLink
+                  exact
+                  to='/register'
+                  // className='btn-link'
+                  // className='nav-link'
+                  // activeClassName='menu_active'
+                >
+                  Register
+                </NavLink>
+              </button>
+
+              {/* <li className='nav-item'>
                 <NavLink
                   exact
                   to='/register'
@@ -65,7 +87,7 @@ const Navbar = (props) => {
                 >
                   Register
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

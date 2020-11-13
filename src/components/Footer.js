@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
       </div> */}
-      <section id='footer' className='footer shadow-top py-5 mt-5'>
+      <section id='footer' className='footer shadow-top pt-5 pb-4'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-3 col-sm-12 col-xs-12'>
