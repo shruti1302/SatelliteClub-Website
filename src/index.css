@@ -1365,3 +1365,34 @@ body {
 .contact-section textarea:hover {
   border: 1px solid rgb(34, 34, 34);
 }
+
+.loading-astro {
+  margin-top: 10%;
+  margin-left: 28%;
+  animation: left-right 1s ease-in-out infinite alternate-reverse both;
+  width: 550px;
+}
+
+.loading-page {
+  height: 100vh;
+  background-color: #e3e1f3;
+  /* padding-bottom: %; */
+}
+
+@-webkit-keyframes left-right {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
