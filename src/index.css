@@ -36,6 +36,15 @@ body {
 .nav-link:hover {
   color: rgb(255, 255, 255, 0.85);
 }
+
+.toggler-icon {
+  width: 30px;
+}
+
+.collapse .navbar-collapse {
+  background-color: #0b173d;
+}
+
 .register-button {
   /* padding: 2px 20px; */
   font-size: 20px;

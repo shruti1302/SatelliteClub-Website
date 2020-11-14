@@ -1,9 +1,13 @@
 import React from 'react';
+import bgImage from '../images/10857-compressed.jpg';
 
 const mainSection = () => {
   return (
     <>
-      <section className='main-section text-center'>
+      <section
+        className='main-section text-center'
+        style={{ backgroundImage: bgImage }}
+      >
         <div id='stars'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
@@ -17,9 +21,7 @@ const mainSection = () => {
                 Manipal University Jaipur
                 {/* <span className='muj'>Manipal University Jaipur</span> */}
               </div>
-              <div className='tagline'>
-                ________MOTTO________
-              </div>
+              <div className='tagline'>________MOTTO________</div>
             </div>
           </div>
         </div>

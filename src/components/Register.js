@@ -1,8 +1,40 @@
-import React, { useEffect } from 'react';
-import { withRouter } from 'react-router';
+import React, { useEffect, useState } from 'react';
+// import axios from 'axios';
 import Navbar from './Navbar';
 
 const Register = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    course: '',
+    branch: '',
+    year: '',
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => {
+      return {
+        ...prevData,
+        [name]: value,
+      };
+    });
+  };
+
+  const submitData = (event) => {
+    event.preventDefault();
+    console.log(formData);
+    // axios
+    //   .post('https://api.apispreadsheets.com/data/3520', formData)
+    //   .then((res) => {
+    //     console.log('Success');
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+  };
+
   useEffect(() => {
     let navbar = document.querySelector('.navbar-fixed-top');
     navbar.classList.remove('bg-transparent');
@@ -24,7 +56,7 @@ const Register = () => {
       navbar.classList.remove('bg-transparent');
     }
   };
-  // console.log('Register');
+
   return (
     <>
       <Navbar />
@@ -40,71 +72,101 @@ const Register = () => {
           <div className='row'>
             <div className='col-8 mx-auto'>
               <div className='form-container'>
-                <form>
+                <form id='register-form'>
                   <div className='form-group mb-4'>
                     <label>Name</label>
+
                     <input
                       type='text'
+                      name='name'
                       className='form-control'
                       id='nameField'
                       placeholder='Chris Boyler'
+                      onChange={handleChange}
+                      value={formData.name}
                     />
                   </div>
                   <div className='form-group mb-4'>
-                    <label>Email address</label>
+                    <label>Email Address</label>
+
                     <input
                       type='email'
+                      name='email'
                       className='form-control'
                       id='emailField'
                       placeholder='name@example.com'
+                      onChange={handleChange}
+                      value={formData.email}
                     />
                   </div>
                   <div className='form-group mb-4'>
                     <label>Mobile No.</label>
+
                     <input
                       type='text'
+                      name='mobile'
                       className='form-control'
                       id='mobileField'
                       placeholder='9567812345'
+                      onChange={handleChange}
+                      value={formData.mobile}
                     />
                   </div>
+
                   <div className='row'>
                     <div className='col-5'>
                       <div className='form-group mb-5'>
                         <label>Course</label>
+
                         <input
                           type='text'
+                          name='course'
                           className='form-control'
                           id='courseField'
                           placeholder='B.Tech.'
+                          onChange={handleChange}
+                          value={formData.course}
                         />
                       </div>
                     </div>
+
                     <div className='col-4'>
                       <div className='form-group mb-5'>
                         <label>Branch</label>
+
                         <input
                           type='text'
+                          name='branch'
                           className='form-control'
                           id='branchField'
                           placeholder='Mechanical'
+                          onChange={handleChange}
+                          value={formData.branch}
                         />
                       </div>
                     </div>
                     <div className='col-3'>
                       <div className='form-group mb-5'>
                         <label>Year</label>
+
                         <input
                           type='text'
+                          name='year'
                           className='form-control'
                           id='yearField'
                           placeholder='1st'
+                          onChange={handleChange}
+                          value={formData.year}
                         />
                       </div>
                     </div>
                   </div>
 
-                  <button type='submit' className='submit-btn'>
+                  <button
+                    type='submit'
+                    onClick={submitData}
+                    className='submit-btn'
+                  >
                     Register
                   </button>
                 </form>
@@ -117,4 +179,7 @@ const Register = () => {
   );
 };
 
-export default withRouter(Register);
+export default Register;
+
+// 109314176935-4b8e3kivp2e9ivvj0jick59ss8q3enm0.apps.googleusercontent.com
+// WUgzmfWWgDAdPhlwhRncYHqd
