@@ -46,7 +46,7 @@ const Subsystems = () => {
       <section className='subsystem-section'>
         <div className='container'>
           <div className=' subsystems-heading'>
-            <span className='get-to-know'> WHAT ARE</span> <br />
+            <span className='get-to-know'> Know Our</span> <br />
             <span className='subsystems'>SUBSYSTEMS</span>
           </div>
         </div>{' '}
@@ -62,7 +62,7 @@ const Subsystems = () => {
       />
 
       <section className='subsystems-card-section'>
-        <div className='container'>
+        <div className='container-fluid'>
           <div className='row'>
             <div className='col-10 mx-auto'>
               <BlogCard

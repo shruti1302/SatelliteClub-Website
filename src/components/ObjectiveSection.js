@@ -6,7 +6,7 @@ const contentSection = (props) => {
       <section
         className={`plan-section content-section text-center alternate-section`}
       >
-        <div className='container'>
+        <div className='container-fluid'>
           <div className='section-heading mb-5'>OBJECTIVES</div>
           <div className='row'>
             <div className='col-10 mx-auto'>

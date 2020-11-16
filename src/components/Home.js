@@ -24,9 +24,10 @@ const Home = () => {
       navbar.classList.remove('bg-opaque');
     }
   };
+
   return (
     <>
-      <Navbar color='rbga(0,0,0,0.01)' />
+      <Navbar />
       <MainSection />
       <AboutSection />
       <ObjectiveSection

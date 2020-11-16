@@ -4,6 +4,12 @@ import Logo from '../images/logo1.png';
 import TogglerIcon from '../images/toggler-icon.png';
 
 const Navbar = (props) => {
+  const bgColorChange = () => {
+    let navbar = document.querySelector('.navbar-fixed-top');
+    navbar.classList.toggle('bg-opaque');
+    navbar.classList.toggle('bg-transparent');
+  };
+
   return (
     <>
       <header>
@@ -31,6 +37,7 @@ const Navbar = (props) => {
             aria-controls='navbarSupportedContent'
             aria-expanded='false'
             aria-label='Toggle navigation'
+            onClick={bgColorChange}
           >
             {/* <span className='navbar-toggler-icon'> */}
             <img src={TogglerIcon} className='toggler-icon' />

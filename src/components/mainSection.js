@@ -13,7 +13,7 @@ const mainSection = () => {
         <div id='stars3'></div>
         <div id='title'>
           <div className='layer'>
-            <div className='container'>
+            <div className='container-fluid'>
               <div className='hindi-heading'>अनंत दृष्टि</div>
               <div className='main-heading'>Anant Drishti</div>
               <div className='title-college mt-4'>
@@ -21,7 +21,7 @@ const mainSection = () => {
                 Manipal University Jaipur
                 {/* <span className='muj'>Manipal University Jaipur</span> */}
               </div>
-              <div className='tagline'>________MOTTO________</div>
+              <div className='tagline'>NEVER STOP LOOKING UP!</div>
             </div>
           </div>
         </div>
