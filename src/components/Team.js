@@ -55,7 +55,7 @@ const Team = () => {
                 <div className='row mb-5'>
                   <div className='member-heading text-center mb-4'>Faculty</div>
 
-                  <div className='col-xs-3 col-sm-3 col-lg-4 mx-auto'>
+                  <div className='col-xs-3 col-sm-3 col-lg-3 mx-auto'>
                     <TeamCard
                       name='Mr Manoj R'
                       post='Faculty Co-ordinator'
@@ -135,7 +135,6 @@ const Team = () => {
                   </div>
 
                   <div className='col-lg-3 col-sm-4 col-xs-6'>
-                    {' '}
                     <TeamCard
                       name='Debanil Chowdhury'
                       post='Subsystems Head 4'
@@ -206,6 +205,67 @@ const Team = () => {
                       img={Shruti}
                     />
                   </div>
+                </div>
+              </div>
+              <div className='member-heading text-center my-4'>Members</div>
+              <div className='row'>
+                <div className='col-lg-3 col-sm-4 col-xs-6'>
+                  <TeamCard
+                    name='ABC'
+                    // post='President'
+                    img="url('https://lh3.googleusercontent.com/proxy/hSfhXnb6NEVp3dabaB_X4ukzAJ-yQyZ13qeYy39LF1DKaE-DBYx8CxlN095xfT3AxyQeDuQ-a_3g6zM5Bb6HjH4OGg2UIRTUCqQixcBvKZ7dyJR-9w')"
+                  />
+                </div>
+                <div className='col-lg-3 col-sm-4 col-xs-6'>
+                  <TeamCard
+                    name='ABC'
+                    // post='President'
+                    img="url('https://lh3.googleusercontent.com/proxy/hSfhXnb6NEVp3dabaB_X4ukzAJ-yQyZ13qeYy39LF1DKaE-DBYx8CxlN095xfT3AxyQeDuQ-a_3g6zM5Bb6HjH4OGg2UIRTUCqQixcBvKZ7dyJR-9w')"
+                  />
+                </div>
+                <div className='col-lg-3 col-sm-4 col-xs-6'>
+                  <TeamCard
+                    name='ABC'
+                    // post='President'
+                    img="url('https://lh3.googleusercontent.com/proxy/hSfhXnb6NEVp3dabaB_X4ukzAJ-yQyZ13qeYy39LF1DKaE-DBYx8CxlN095xfT3AxyQeDuQ-a_3g6zM5Bb6HjH4OGg2UIRTUCqQixcBvKZ7dyJR-9w')"
+                  />
+                </div>
+                <div className='col-lg-3 col-sm-4 col-xs-6'>
+                  <TeamCard
+                    name='ABC'
+                    // post='President'
+                    img="url('https://lh3.googleusercontent.com/proxy/hSfhXnb6NEVp3dabaB_X4ukzAJ-yQyZ13qeYy39LF1DKaE-DBYx8CxlN095xfT3AxyQeDuQ-a_3g6zM5Bb6HjH4OGg2UIRTUCqQixcBvKZ7dyJR-9w')"
+                  />
+                </div>
+
+                <div className='col-lg-3 col-sm-4 col-xs-6'>
+                  <TeamCard
+                    name='ABC'
+                    // post='President'
+                    img="url('https://lh3.googleusercontent.com/proxy/hSfhXnb6NEVp3dabaB_X4ukzAJ-yQyZ13qeYy39LF1DKaE-DBYx8CxlN095xfT3AxyQeDuQ-a_3g6zM5Bb6HjH4OGg2UIRTUCqQixcBvKZ7dyJR-9w')"
+                  />{' '}
+                </div>
+                <div className='col-lg-3 col-sm-4 col-xs-6'>
+                  <TeamCard
+                    name='ABC'
+                    // post='President'
+                    img="url('https://lh3.googleusercontent.com/proxy/hSfhXnb6NEVp3dabaB_X4ukzAJ-yQyZ13qeYy39LF1DKaE-DBYx8CxlN095xfT3AxyQeDuQ-a_3g6zM5Bb6HjH4OGg2UIRTUCqQixcBvKZ7dyJR-9w')"
+                  />
+                </div>
+
+                <div className='col-lg-3 col-sm-4 col-xs-6'>
+                  <TeamCard
+                    name='ABC'
+                    // post='President'
+                    img="url('https://lh3.googleusercontent.com/proxy/hSfhXnb6NEVp3dabaB_X4ukzAJ-yQyZ13qeYy39LF1DKaE-DBYx8CxlN095xfT3AxyQeDuQ-a_3g6zM5Bb6HjH4OGg2UIRTUCqQixcBvKZ7dyJR-9w')"
+                  />
+                </div>
+                <div className='col-lg-3 col-sm-4 col-xs-6'>
+                  <TeamCard
+                    name='ABC'
+                    // post='President'
+                    img="url('https://lh3.googleusercontent.com/proxy/hSfhXnb6NEVp3dabaB_X4ukzAJ-yQyZ13qeYy39LF1DKaE-DBYx8CxlN095xfT3AxyQeDuQ-a_3g6zM5Bb6HjH4OGg2UIRTUCqQixcBvKZ7dyJR-9w')"
+                  />
                 </div>
               </div>
             </div>

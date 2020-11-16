@@ -65,7 +65,7 @@ const Register = () => {
           <div className='section-heading text-center mb-3'>
             BECOME A MEMBER
           </div>
-          <div className='tagline text-center mt-1 mb-5'>
+          <div className='register-line text-center mt-1 mb-5'>
             Join Anant Drishti to contribute your infinitesimal bit to the
             seamless sky!
           </div>

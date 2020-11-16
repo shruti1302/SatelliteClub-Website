@@ -18,7 +18,9 @@ const Footer = () => {
               <div className='info'>
                 <div className='info-label mb-2'>Email us at</div>
                 <div className='info-content'>
-                  <a href='#'>anantdrishti.muj@gmail.com</a>
+                  <a href='mailto:anantdrishti.muj@gmail.com'>
+                    anantdrishti.muj@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -68,7 +70,7 @@ const Footer = () => {
                     </a>
                   </span> */}
                   <span>
-                    <a href='#'>
+                    <a href='https://www.instagram.com/anantdrishti.muj/'>
                       <img
                         src='https://img.icons8.com/material-outlined/40/ffffff/instagram-new.png'
                         alt=''

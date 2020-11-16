@@ -44,7 +44,7 @@ const Subsystems = () => {
       <Navbar />
 
       <section className='subsystem-section'>
-        <div className='container'>
+        <div className='container-fluid'>
           <div className=' subsystems-heading'>
             <span className='get-to-know'> Know Our</span> <br />
             <span className='subsystems'>SUBSYSTEMS</span>

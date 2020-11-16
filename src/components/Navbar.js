@@ -6,8 +6,8 @@ import TogglerIcon from '../images/toggler-icon.png';
 const Navbar = (props) => {
   const bgColorChange = () => {
     let navbar = document.querySelector('.navbar-fixed-top');
-    navbar.classList.toggle('bg-opaque');
-    navbar.classList.toggle('bg-transparent');
+    navbar.classList.add('bg-opaque');
+    navbar.classList.remove('bg-transparent');
   };
 
   return (
@@ -45,7 +45,7 @@ const Navbar = (props) => {
           </button>
 
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul className='navbar-nav ml-auto'>
+            <ul className='navbar-nav ml-auto my-3'>
               <li className='nav-item'>
                 <NavLink
                   exact
@@ -57,17 +57,17 @@ const Navbar = (props) => {
                   Home
                 </NavLink>
               </li>
-              <li className='nav-item'>
+              <li className='nav-item '>
                 <NavLink
                   exact
                   to='/satellite'
-                  className='nav-link mr-1'
+                  className='nav-link'
                   activeClassName='menu_active'
                 >
                   Satellite
                 </NavLink>
               </li>
-              <li className='nav-item'>
+              <li className='nav-item '>
                 <NavLink
                   exact
                   to='/subsystems'
