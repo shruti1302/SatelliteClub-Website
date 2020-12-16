@@ -4,7 +4,7 @@ import Logo from '../images/transparentdefault.png';
 const Footer = () => {
   return (
     <>
-      <section id='footer' className='footer shadow-top pt-5 pb-4 px-5'>
+      <section id='footer' className='footer shadow-top p-5'>
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-lg-3 col-sm-12 col-xs-12'>
@@ -18,8 +18,9 @@ const Footer = () => {
               <div className='info'>
                 <div className='info-label mb-2'>Email us at</div>
                 <div className='info-content'>
-                  <a href='mailto:anantdrishti.muj@gmail.com'>
-                    anantdrishti.muj@gmail.com
+                  <a href='mailto:anantdrishti@muj.manipal.edu'>
+                    anantdrishti@muj.manipal.edu
+                    {/* anantdrishti.muj@gmail.com */}
                   </a>
                 </div>
               </div>
@@ -29,7 +30,7 @@ const Footer = () => {
               <div className='info'>
                 <div className='info-label mb-2'>Call us at</div>
                 <div className='info-content'>
-                  <strong>Naman Varshney</strong>
+                  <strong>Namit Varshney</strong>
                 </div>
                 <div className='info-content'>+91 8218140586</div>
                 <div className='info-content'>

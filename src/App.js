@@ -32,7 +32,7 @@ const App = () => {
           <Route exact path='/subsystems' component={Subsystems} />
           <Route exact path='/team' component={Team} />
 
-          <Redirect to='/' />
+          {/* <Redirect to='/' /> */}
         </Switch>
         <Footer />
       </Router>

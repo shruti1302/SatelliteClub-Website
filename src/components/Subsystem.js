@@ -9,10 +9,12 @@ import AlternateBlogCard from './AlternateBlogCard';
 import pic1 from '../images/Satellite 3.jpg';
 import transmissiontower from '../images/Transmission Tower.jpg';
 import ttcm from '../images/satellite-3128159.jpg';
+import nanosatellite from '../images/NanoSatellite.jpg';
 
 const Subsystems = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    window.scrollTo(0, 0);
   }, []);
 
   const handleScroll = () => {
@@ -66,32 +68,57 @@ const Subsystems = () => {
           <div className='row'>
             <div className='col-10 mx-auto'>
               <BlogCard
-                title='AOC Subsystem'
-                content='Altitude and Orbit Control (AOC) subsystem consists of rocket motors, which are capable of placing the satellite into the right orbit, whenever it is deviated from the respective orbit. AOC subsystem is helpful in order to make the antennas, which are of narrow beam type points towards earth.
-We can make this AOC subsystem into the following two parts: Altitude Control Subsystem, Orbit Control Subsystem'
+                title='Electric Power Subsystem'
+                content="The Electric Power Subsystem (EPS) of a satellite is a heavy and 
+expensive subsystem. It is often about 25% of the weight and 25% of the cost of
+a spacecraft.The electrical power subsystem (EPS) provides, stores, distributes and
+control spacecraft's electrical power. In order to size each component of this 
+subsystem we must identify the electrical power loads for mission operations at 
+the beginning-of-life, BOL, and end-of-life, EOL. For many missions, the end-of-life
+power demands must be reduced to compensate for solar array performanc
+e degradation. The average electrical power needed at EOL determines the size of 
+the power source so a detailed power budget, at different stages of the
+mission, must be done. "
                 imgsrc={pic1}
               />
               <AlternateBlogCard
-                title='TTCM Subsystem'
-                content='Telemetry, Tracking, Commanding and Monitoring (TTCM) subsystem is present in both satellite and earth station. In general, satellite gets data through sensors. So, Telemetry subsystem present in the satellite sends this data to earth station(s). Therefore, TTCM subsystem is very much necessary for any communication satellite in order to operate it successfully.
-It is the responsibility of satellite operator in order to control the satellite in its life time, after placing it in the proper orbit. This can be done with the help of TTCM subsystem.'
+                title=' Attitude Determination and Control Subsystem'
+                content='The Attitude Determination and Control System (ADCS) is a crucial subsystem of a spacecraft. It provides pointing accuracy and stability of the payloads and antennas.The first step of the attitude system design process is the definition of guiding requirements based on mission goals. Since mission goals often require more than one mode of operating a spacecraft, the guiding requirements generally begin with a description of the control modes the ADCS is expected to execute to meet those goals. The final form of ADCS requirements and control modes will be the result of iteration; control modes are designed to achieve certain sets of requirements, and better understanding of the actual needs of the mission often results from having these modes of controlling the spacecraft well defined. This iteration takes place in a trade space where a single set of ADCS hardware must be used in different ways to meet different sets of requirements. The ADCS will also be dependent on certain other subsystems, such as the power and structural subsystems. '
                 imgsrc={ttcm}
               />
 
               <BlogCard
-                title='Power and Antenna Subsystems'
-                content='We know that the satellite present in an orbit should be operated continuously during its life span. So, the satellite requires internal power in order to operate various electronic systems and communications payload that are present in it.
-Power system is a vital subsystem, which provides the power required for working of a satellite. Mainly, the solar cells (or panels) and rechargeable batteries are used in these systems.
-    Antennas are present in both satellite and earth station. 
-Satellite antennas perform two types of functions. Those are receiving of signals, which are coming from earth station and transmitting signals to one or more earth stations based on the requirement. In other words, the satellite antennas receive uplink signals and transmit downlink signals.'
+                title='Communication and Ground Station Subsystem'
+                content='The primary goal of the communication subsystem is to provide a link to relay data findings and send commands to and from the satellite.
+Communication subsystem will ensure continuous communication between the ground station and the satellite after ejection from the rocket.
+The communications subsystem is responsible for ensuring telecommunication between the satellite and another system, which may be either another satellite or a ground station.
+The signals used to interchange data are nothing but electromagnetic pulses molded or manipulated by the transmitter in such a way that contains information that the receiver can understand. 
+It provides the interface between the spacecraft and ground systems.
+Main role of Ground station Subsystem head is to control the satellite payloads and other components. 
+The Ground Station is related to communication and tracking of the satellite and main responsibility is to keep a track of all those things that help for communication.
+ The ground station has 3 parts that is to be handled:
+1. Antenna and its tracking system.
+2. Transceivers, LNA and accessories for interfacing antenna with control computer
+3. Control computer further connected to the remote server through reliable Intranet connection.
+'
                 imgsrc={transmissiontower}
               />
 
               <AlternateBlogCard
-                title='Transponders'
-                content='The subsystem, which provides the connecting link between transmitting and receiving antennas of a satellite is known as Transponder. It is one of the most important subsystem of space segment subsystems.
-Transponder performs the functions of both transmitter and receiver (Responder) in a satellite. Hence, the word ‘Transponder’ is obtained by the combining few letters of two words, Transmitter (Trans) and Responder (ponder).'
+                title='Onboard Data Handling Subsystem'
+                content='A satellite needs a set of instructions or codes to work in the desired way we want. It needs to communicate with the ground station, take scientific pictures or data & send it back to earth. That’s where onboard data handling subsystems comes in.
+Onboard data handling subsystem should implement ADCS algorithm & provide long memory in order to store the scientific data by the payload until the data can be transferred to the ground station. Memory should also be provided to save commands & other information, & flexibility to upload new software even after the launch. It should interpret commands sent from the ground station. Provision should also be made for enough processing capacities in order to make the compression of images captured by the payload, to calculate the attitude control for the altitude determination & control system, and to run the chosen embedded operating system. It should maintain life statuses & give the reference time aboard the satellite.
+'
                 imgsrc='https://images.techhive.com/images/article/2015/09/satellite_space_communication-100613561-orig.jpg'
+              />
+
+              <BlogCard
+                title='Imaging Subsystem'
+                content='The Imaging Subsystem in a satellite is the part of the satellite that works as its “eyes”. It is what allows the satellite to navigate, it is what allows the satellite to analyze the environment, it is what allows the satellite to detect radiation, objects in its vicinity, etc. 
+An Imaging subsystem consists of cameras which are made to be sensitive to various wavelengths of light. The camera captures various images which are processed for various functions like navigation, detection of obstacles or scientific analysis of the environment. If necessary, the on-board computer can also transmit the images to ground station for further analysis.
+In this manner, an imaging subsystem is crucial to the functioning of satellite.
+'
+                imgsrc={nanosatellite}
               />
             </div>
           </div>

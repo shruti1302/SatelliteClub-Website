@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import axios from 'axios';
 import Navbar from './Navbar';
+import errorRocket from '../images/error-rocket.png';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,27 @@ const Register = () => {
     branch: '',
     year: '',
   });
+  const [message, setMessage] = useState('');
+
+  const successMsg = `
+    <div class="form-msg">
+      <div class="row">
+      
+        <div class="col">
+
+          <div class="msg-heading">Way to Go!</div>
+          <div>Our team will contact you soon!</div>
+        
+        </div>
+
+      
+      </div>
+    
+    </div>`;
+  const errorMsg = `<div class="form-msg">
+    <div class="msg-heading">Oops!</div>
+    <div>Something went wrong. Try contacting us at anantdrishti@muj.manipal.edu </div>
+    </div>`;
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -22,20 +44,42 @@ const Register = () => {
     });
   };
 
-  const submitData = (event) => {
-    event.preventDefault();
+  const submitData = async (e) => {
+    e.preventDefault();
     console.log(formData);
-    // axios
-    //   .post('https://api.apispreadsheets.com/data/3520', formData)
-    //   .then((res) => {
-    //     console.log('Success');
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+    const { name, email, mobile, course, branch, year } = formData;
+    try {
+      const response = await fetch(
+        'https://v1.nocodeapi.com/agarwalshruti/google_sheets/huSxTzWqpSQwjbhA?tabId=Registration',
+        {
+          method: 'post',
+          body: JSON.stringify([[name, email, mobile, course, branch, year]]),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+      const json = await response.json();
+      console.log('Success:', JSON.stringify(json));
+
+      setMessage(successMsg);
+      setFormData({
+        name: '',
+        email: '',
+        mobile: '',
+        course: '',
+        branch: '',
+        year: '',
+      });
+    } catch (error) {
+      console.error('Error:', error);
+      setMessage(errorMsg);
+    }
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     let navbar = document.querySelector('.navbar-fixed-top');
     navbar.classList.remove('bg-transparent');
     navbar.classList.add('bg-opaque');
@@ -87,19 +131,6 @@ const Register = () => {
                     />
                   </div>
                   <div className='form-group mb-4'>
-                    <label>Email Address</label>
-
-                    <input
-                      type='email'
-                      name='email'
-                      className='form-control'
-                      id='emailField'
-                      placeholder='name@example.com'
-                      onChange={handleChange}
-                      value={formData.email}
-                    />
-                  </div>
-                  <div className='form-group mb-4'>
                     <label>Mobile No.</label>
 
                     <input
@@ -112,6 +143,33 @@ const Register = () => {
                       value={formData.mobile}
                     />
                   </div>
+                  <div className='form-group mb-4'>
+                    <label>Email Address</label>
+
+                    <input
+                      type='email'
+                      name='email'
+                      className='form-control'
+                      id='emailField'
+                      placeholder='name@example.com'
+                      onChange={handleChange}
+                      value={formData.email}
+                    />
+                  </div>
+                  {/* <div className='form-group mb-4'>
+                    <label>Mobile No.</label>
+
+                    <input
+                      type='text'
+                      name='mobile'
+                      className='form-control'
+                      id='mobileField'
+                      placeholder='9567812345'
+                      onChange={handleChange}
+                      value={formData.mobile}
+                      required
+                    />
+                  </div> */}
 
                   <div className='row'>
                     <div className='col-5'>
@@ -170,6 +228,10 @@ const Register = () => {
                     Register
                   </button>
                 </form>
+
+                <div dangerouslySetInnerHTML={{ __html: message }}>
+                  {/* {message} */}
+                </div>
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ const CardsSection = () => {
               <div className='col-lg-4 col-sm-12 col-xs-12'>
                 <Card
                   bgImage={pic1}
-                  cardTitle='CubeSat'
+                  cardTitle='Designing and Launching Cubesat'
                   cardContent='
 A CubeSat (U-class spacecraft) is a type of miniaturized satellite for space research that is made up of
 multiples of 10 cm × 10 cm × 10 cm cubic unit.CubeSats have a mass of no more than 1.33 kilograms (2.9

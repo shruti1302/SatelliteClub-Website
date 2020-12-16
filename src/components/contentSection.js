@@ -3,9 +3,7 @@ import React from 'react';
 const contentSection = (props) => {
   return (
     <>
-      <section
-        className={`plan-section content-section text-center ${props.bgColor}`}
-      >
+      <section className='plan-section content-section text-center'>
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-10 mx-auto content-container'>

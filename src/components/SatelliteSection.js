@@ -28,6 +28,9 @@ const SatelliteSection = () => {
             autoPlay='autoplay'
             id='vid'
             className='satellite-video'
+            // controls='true'
+            playsinline='true'
+            disablePictureInPicture='true'
             muted
           >
             <source type='video/mp4' src={SatelliteVideo}></source>

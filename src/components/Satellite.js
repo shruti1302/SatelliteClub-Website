@@ -7,6 +7,8 @@ import SatelliteSection from './SatelliteSection';
 
 const Satellite = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     // window.addEventListener('load', handleLoad);
 
     window.addEventListener('scroll', handleScroll);

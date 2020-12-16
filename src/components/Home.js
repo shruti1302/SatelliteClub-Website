@@ -8,6 +8,8 @@ import ContactSection from './Contact';
 
 const Home = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     window.addEventListener('scroll', handleScroll);
   }, []);
 
