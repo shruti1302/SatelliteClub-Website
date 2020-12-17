@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import axios from 'axios';
 import Navbar from './Navbar';
-import errorRocket from '../images/error-rocket.png';
+import validate from './validateInfo';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +13,8 @@ const Register = () => {
     year: '',
   });
   const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const successMsg = `
     <div class="form-msg">
@@ -35,6 +37,7 @@ const Register = () => {
     </div>`;
 
   const handleChange = (event) => {
+    setMessage('');
     const { name, value } = event.target;
     setFormData((prevData) => {
       return {
@@ -44,9 +47,14 @@ const Register = () => {
     });
   };
 
-  const submitData = async (e) => {
+  const handleClick = (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    setErrors(validate(formData));
+    setIsSubmitting(true);
+  };
+
+  const submitData = async () => {
     const { name, email, mobile, course, branch, year } = formData;
     try {
       const response = await fetch(
@@ -61,7 +69,6 @@ const Register = () => {
       );
       const json = await response.json();
       console.log('Success:', JSON.stringify(json));
-
       setMessage(successMsg);
       setFormData({
         name: '',
@@ -76,6 +83,13 @@ const Register = () => {
       setMessage(errorMsg);
     }
   };
+
+  useEffect(() => {
+    if (Object.keys(errors).length === 0 && isSubmitting) {
+      // callback();
+      submitData();
+    }
+  }, [errors]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -129,6 +143,7 @@ const Register = () => {
                       onChange={handleChange}
                       value={formData.name}
                     />
+                    {errors.name && <p>{errors.name}</p>}
                   </div>
                   <div className='form-group mb-4'>
                     <label>Mobile No.</label>
@@ -142,6 +157,7 @@ const Register = () => {
                       onChange={handleChange}
                       value={formData.mobile}
                     />
+                    {errors.mobile && <p>{errors.mobile}</p>}
                   </div>
                   <div className='form-group mb-4'>
                     <label>Email Address</label>
@@ -155,6 +171,7 @@ const Register = () => {
                       onChange={handleChange}
                       value={formData.email}
                     />
+                    {errors.email && <p>{errors.email}</p>}
                   </div>
                   {/* <div className='form-group mb-4'>
                     <label>Mobile No.</label>
@@ -222,7 +239,7 @@ const Register = () => {
 
                   <button
                     type='submit'
-                    onClick={submitData}
+                    onClick={handleClick}
                     className='submit-btn'
                   >
                     Register

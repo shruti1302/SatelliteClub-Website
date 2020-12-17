@@ -1131,6 +1131,12 @@ body {
   margin-bottom: 1%;
 }
 
+.form-group p {
+  color: red;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
 input:focus,
 button:focus {
   outline: none !important;
