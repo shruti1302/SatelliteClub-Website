@@ -6,11 +6,14 @@ import validate from './validateInfo';
 const Register = () => {
   const [formData, setFormData] = useState({
     name: '',
+    regno: '',
     email: '',
+    officialEmail: '',
     mobile: '',
     course: '',
     branch: '',
     year: '',
+    paymentRef: '',
   });
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
@@ -33,7 +36,7 @@ const Register = () => {
     </div>`;
   const errorMsg = `<div class="form-msg">
     <div class="msg-heading">Oops!</div>
-    <div>Something went wrong. Try contacting us at anantdrishti@muj.manipal.edu </div>
+    <div>Something went wrong. Contact us at <br> Email: anantdrishti@muj.manipal.edu <br> Call/Whatsapp: 9315785908 </div>
     </div>`;
 
   const handleChange = (event) => {
@@ -49,19 +52,42 @@ const Register = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
+    console.log(formData);
 
     setErrors(validate(formData));
     setIsSubmitting(true);
   };
 
   const submitData = async () => {
-    const { name, email, mobile, course, branch, year } = formData;
+    const {
+      name,
+      regno,
+      email,
+      officialEmail,
+      mobile,
+      course,
+      branch,
+      year,
+      paymentRef,
+    } = formData;
     try {
       const response = await fetch(
         'https://v1.nocodeapi.com/agarwalshruti/google_sheets/huSxTzWqpSQwjbhA?tabId=Registration',
         {
           method: 'post',
-          body: JSON.stringify([[name, email, mobile, course, branch, year]]),
+          body: JSON.stringify([
+            [
+              name,
+              regno,
+              email,
+              officialEmail,
+              mobile,
+              course,
+              branch,
+              year,
+              paymentRef,
+            ],
+          ]),
           headers: {
             'Content-Type': 'application/json',
           },
@@ -72,11 +98,14 @@ const Register = () => {
       setMessage(successMsg);
       setFormData({
         name: '',
+        regno: '',
         email: '',
+        officialEmail: '',
         mobile: '',
         course: '',
         branch: '',
         year: '',
+        paymentRef: '',
       });
     } catch (error) {
       console.error('Error:', error);
@@ -145,6 +174,22 @@ const Register = () => {
                     />
                     {errors.name && <p>{errors.name}</p>}
                   </div>
+
+                  <div className='form-group mb-4'>
+                    <label>Registration no.</label>
+
+                    <input
+                      type='text'
+                      name='regno'
+                      className='form-control'
+                      id='regField'
+                      placeholder='189302022'
+                      onChange={handleChange}
+                      value={formData.regno}
+                    />
+                    {errors.regno && <p>{errors.regno}</p>}
+                  </div>
+
                   <div className='form-group mb-4'>
                     <label>Mobile No.</label>
 
@@ -173,24 +218,24 @@ const Register = () => {
                     />
                     {errors.email && <p>{errors.email}</p>}
                   </div>
-                  {/* <div className='form-group mb-4'>
-                    <label>Mobile No.</label>
+                  <div className='form-group mb-4'>
+                    <label>MUJ Email Address</label>
 
                     <input
-                      type='text'
-                      name='mobile'
+                      type='email'
+                      name='officialEmail'
                       className='form-control'
-                      id='mobileField'
-                      placeholder='9567812345'
+                      id='officialEmailField'
+                      placeholder='firstname.registration@muj.manipal.edu'
                       onChange={handleChange}
-                      value={formData.mobile}
-                      required
+                      value={formData.officialEmail}
                     />
-                  </div> */}
+                    {errors.officialEmail && <p>{errors.officialEmail}</p>}
+                  </div>
 
                   <div className='row'>
                     <div className='col-5'>
-                      <div className='form-group mb-5'>
+                      <div className='form-group mb-4'>
                         <label>Course</label>
 
                         <input
@@ -202,11 +247,11 @@ const Register = () => {
                           onChange={handleChange}
                           value={formData.course}
                         />
+                        {errors.course && <p>{errors.course}</p>}
                       </div>
                     </div>
-
                     <div className='col-4'>
-                      <div className='form-group mb-5'>
+                      <div className='form-group mb-4'>
                         <label>Branch</label>
 
                         <input
@@ -221,7 +266,7 @@ const Register = () => {
                       </div>
                     </div>
                     <div className='col-3'>
-                      <div className='form-group mb-5'>
+                      <div className='form-group mb-4'>
                         <label>Year</label>
 
                         <input
@@ -229,12 +274,28 @@ const Register = () => {
                           name='year'
                           className='form-control'
                           id='yearField'
-                          placeholder='1st'
+                          placeholder='1'
                           onChange={handleChange}
                           value={formData.year}
                         />
+                        {errors.year && <p>{errors.year}</p>}
                       </div>
                     </div>
+                  </div>
+
+                  <div className='form-group mb-5'>
+                    <label>Paytm/UPI Transaction ID</label>
+
+                    <input
+                      type='text'
+                      name='paymentRef'
+                      className='form-control'
+                      id='paymentField'
+                      placeholder=''
+                      onChange={handleChange}
+                      value={formData.paymentRef}
+                    />
+                    {errors.paymentRef && <p>{errors.paymentRef}</p>}
                   </div>
 
                   <button

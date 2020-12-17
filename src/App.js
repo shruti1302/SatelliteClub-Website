@@ -1,6 +1,7 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {
+  HashRouter,
   BrowserRouter as Router,
   Switch,
   Redirect,
@@ -17,7 +18,7 @@ import Team from './components/Team';
 const App = () => {
   return (
     <>
-      <Router>
+      <HashRouter>
         {/* <Navbar /> */}
         <Switch>
           {/* <Route exact path='/'>
@@ -35,7 +36,7 @@ const App = () => {
           {/* <Redirect to='/' /> */}
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 };

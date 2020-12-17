@@ -1131,7 +1131,8 @@ body {
   margin-bottom: 1%;
 }
 
-.form-group p {
+.form-group p,
+.contact-form-container p {
   color: red;
   margin-top: 4px;
   font-size: 0.9rem;
